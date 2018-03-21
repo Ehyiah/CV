@@ -1,0 +1,97 @@
+/* MENU */
+nav {
+    background-color: #039be5;
+}
+#menuDroit {
+    padding-right: 20px;
+}
+
+#logo {
+    padding-left: 20px;
+}
+
+#logo img {
+    height: 100%;
+}
+/* MENU RESPONSIVE caché en desktop */
+    #menuMobile {
+        display: none;
+    }
+
+
+/* CORPS DU SITE */
+.container {
+    margin-top: 20px;
+}
+
+
+/* CONTENU BLOG */
+    #contenu {
+        margin-top : 20px;
+    }
+
+
+
+
+/* DERNIERS BILLETS ET COMMENTAIRES */
+
+    /* DERNIERS BILLETS */
+        #billetdroit {
+            border: solid 1px rgba(51,51,51,0.12)
+        }
+    /* DERNIERS COMMENTAIRES */
+        #commentairedroit {
+            border: solid 1px rgba(51,51,51,0.12)
+        }
+
+
+
+
+/* FOOTER */
+.page-footer {
+    margin-top : 20px;
+    background-color: #039be5;
+}
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY JUSQUE 600px */
+@media screen and (max-width: 600px) {
+
+    /* MENU RESPONSIVE */
+        #menuDesktop {
+            display: none;
+        }
+        #menuMobile {
+            display: block;
+        }
+
+} /* FIN MEDIA JUSQUE 600 */
+
+
+
+
+
+/* MEDIA QUERY JUSQUE 992px */
+@media screen and (min-width: 601px) and (max-width: 992px) {
+
+    /* MENU RESPONSIVE */
+        #menuDesktop {
+            display: none;
+        }
+        #menuMobile {
+            display: block;
+        }
+
+}   /* FIN MEDIA JUSQUE 992 */
+
+
+/* MEDIA MATERIALIZE 
+600px, 992px, 1200px 
+*/

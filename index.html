@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+		<!--Import Google Icon Font-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--Import materialize.css-->
+		<link type="text/css" rel="stylesheet" href="public/css/materialize.min.css"  media="screen,projection"/>
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="public/css/style.css" />
+        <title>Matthieu GOSTIAUX</title>
+		<!-- favicon -->
+		<link rel="icon" type="image/png" href="public/images/favicon.png" />
+		<meta name="description" content="Matthieu GOSTIAUX">
+		<!-- Open Graph data -->
+		<meta property="og:title" content="Matthieu GOSTIAUX" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://projet4.gostiaux.net/" />
+		<meta property="og:image" content="http://projet4.gostiaux.net/images/logo.png" />
+		<meta property="og:description" content="Matthieu GOSTIAUX"	/>
+		<!-- Twitter Card data -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="Matthieu GOSTIAUX">
+		<meta name="twitter:title" content="Matthieu GOSTIAUX">
+		<meta name="twitter:description" content="Matthieu GOSTIAUX">
+		<meta name="twitter:image" content="http://projet4.gostiaux.net/images/logo.png">
+		
+    </head>
+
+    <body>
+		<!-- HEADER AVEC MENU -->
+			<header>
+				<!-- menu classique desktop -->
+					<div class="navbar-fixed" id="menuDesktop">
+						<nav>
+							<a href="http://projet4.gostiaux.net" id="logo">
+								<img src="public/images/logo.png" alt="Logo du site">
+							</a>
+
+							<!-- contenu menu déroulant pour les épisodes -->
+								<ul id="dropdown1" class="dropdown-content">
+
+								</ul>
+								
+							<ul class="right hide-on-med-and-down" id="menuDroit">
+								<li><a href="http://projet4.gostiaux.net"><i class="material-icons left">home</i>Accueil</a></li>
+								<li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons left">local_library</i>Episodes<i class="material-icons right">arrow_drop_down</i></a></li>
+
+							</ul>
+						</nav>
+
+					</div>
+
+				<!-- menu mobile responsive -->
+					<div id="menuMobile">
+						<nav>
+							<div class="nav-wrapper" class="navbar-fixed">
+									<a href="http://projet4.gostiaux.net" id="logo">
+										<img src="public/images/logo.png" alt="Logo du site">
+									</a>
+									<a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+							</div>
+						</nav>
+							<!-- elements du menu responsive -->
+								<ul id="dropdown2" class="dropdown-content">
+
+								</ul>
+
+							<ul class="sidenav" id="mobile-menu">
+								<li><a href="http://projet4.gostiaux.net">Accueil</a></li>
+								<li><a href="#!" class="dropdown-trigger" data-target="dropdown2">Episodes</a></li>
+
+							</ul>
+					</div>
+			</header>
+
+
+		<!-- CONTENU CENTRAL DU SITE -->
+			<div class="container">
+				
+			<div class="parallax-container">
+      		<div class="parallax"><img src="public/images/01.jpg"></div>
+    		</div>
+
+
+
+			</div>	<!-- fin container -->
+
+
+		<!-- FOOTER -->
+			<footer class="page-footer">
+				<div class="center">
+					<p> 2018, Matthieu GOSTIAUX </p>
+					<div class="divider"></div>
+				</div>
+			</footer>
+
+
+
+
+		<!-- SCRIPTS -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	<!-- JQuery -->
+			<script type="text/javascript" src="public/js/materialize.min.js"></script>					<!-- Materialize -->
+			<script src="public/js/main.js"></script> 													<!-- JS d'initialisation -->
+    </body>
+</html>
