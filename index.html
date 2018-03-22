@@ -16,15 +16,15 @@
 		<!-- Open Graph data -->
 		<meta property="og:title" content="Matthieu GOSTIAUX" />
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="http://projet4.gostiaux.net/" />
-		<meta property="og:image" content="http://projet4.gostiaux.net/images/logo.png" />
+		<meta property="og:url" content="http://gostiaux.net/" />
+		<meta property="og:image" content="http://gostiaux.net/images/logo.png" />
 		<meta property="og:description" content="Matthieu GOSTIAUX"	/>
 		<!-- Twitter Card data -->
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="Matthieu GOSTIAUX">
 		<meta name="twitter:title" content="Matthieu GOSTIAUX">
 		<meta name="twitter:description" content="Matthieu GOSTIAUX">
-		<meta name="twitter:image" content="http://projet4.gostiaux.net/images/logo.png">
+		<meta name="twitter:image" content="http://gostiaux.net/images/logo.png">
 		
     </head>
 
@@ -34,29 +34,29 @@
 				<!-- menu classique desktop -->
 					<div class="navbar-fixed" id="menuDesktop">
 						<nav>
-							<a href="http://projet4.gostiaux.net" id="logo">
+							<a href="http://gostiaux.net" id="logo">
 								<img src="public/images/logo.png" alt="Logo du site">
 							</a>
 
 							<!-- contenu menu déroulant pour les épisodes -->
 								<ul id="dropdown1" class="dropdown-content">
-
+									<li><a href="#projets">Mes projets</a></li>
+									<li><a href="#contact">Me contacter</a></li>
 								</ul>
 								
 							<ul class="right hide-on-med-and-down" id="menuDroit">
-								<li><a href="http://projet4.gostiaux.net"><i class="material-icons left">home</i>Accueil</a></li>
-								<li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons left">local_library</i>Episodes<i class="material-icons right">arrow_drop_down</i></a></li>
+								<li><a href="http://gostiaux.net"><i class="material-icons left">home</i>Accueil</a></li>
+								<li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons left">local_library</i>Menu<i class="material-icons right">arrow_drop_down</i></a></li>
 
 							</ul>
 						</nav>
-
 					</div>
 
 				<!-- menu mobile responsive -->
 					<div id="menuMobile">
 						<nav>
 							<div class="nav-wrapper" class="navbar-fixed">
-									<a href="http://projet4.gostiaux.net" id="logo">
+									<a href="http://gostiaux.net" id="logo">
 										<img src="public/images/logo.png" alt="Logo du site">
 									</a>
 									<a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -64,12 +64,13 @@
 						</nav>
 							<!-- elements du menu responsive -->
 								<ul id="dropdown2" class="dropdown-content">
-
+									<li><a href="#projets">Mes projets</a></li>
+									<li><a href="#contact">Me contacter</a></li>
 								</ul>
 
 							<ul class="sidenav" id="mobile-menu">
-								<li><a href="http://projet4.gostiaux.net">Accueil</a></li>
-								<li><a href="#!" class="dropdown-trigger" data-target="dropdown2">Episodes</a></li>
+								<li><a href="http://gostiaux.net">Accueil</a></li>
+								<li><a href="#!" class="dropdown-trigger" data-target="dropdown2">Menu</a></li>
 
 							</ul>
 					</div>
@@ -77,23 +78,161 @@
 
 
 		<!-- CONTENU CENTRAL DU SITE -->
-			<div class="container">
 				
 			<div class="parallax-container">
-      		<div class="parallax"><img src="public/images/01.jpg"></div>
+      			<div class="parallax"><img src="public/images/05.jpeg"></div>
     		</div>
 
+			<div class="section white" >
+				<div class="row container">
+				  	<h2 class="center-align">Développeur Web Junior</h2>
+				  	<h5 class="center-align" class="grey-text text-darken-3 lighten-3">Développeur Web en <strong>HTML5, CSS, Javascript, PHP et Mysql. </strong>Vous trouverez ci-dessous un descriptif de mes projets réalisés et les liens permettant de les visiter</h5>
+					<p class="center-align" class="grey-text text-darken-3 lighten-3">Utilisation de CMS <strong>Wordpress</strong> et de Framework <strong>Symfony</strong> Mais encore <strong>Bootstrap ou Materialize</strong></p>
+				</div>
+			</div>
+
+			<div class="container" id="projets">
+				<div class="row">
+					<!-- premier projet -->
+					<div class="col xl7">
+						<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="public/images/projets/projet1/01.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Intégration de maquettes<i class="material-icons right">more_vert</i></span>
+							<p><a href="http://projet1.gostiaux.net">Visiter ce site</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Intégration réalisée à partir d'une maquette fournie<i class="material-icons right">close</i></span>
+							<p>Here is some more information about this product that is only revealed once clicked on.</p>
+						</div>
+						</div>
+					</div>
+				</div>
 
 
+				  
+				<!-- deuxieme projet -->
+				<div class="row" id="second">
+					<div class="col xl7 offset-xl5">
+						<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="public/images/projets/projet2/01.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Création d'un thème Wordpress<i class="material-icons right">more_vert</i></span>
+							<p><a href="http://projet2.gostiaux.net">Visiter ce site</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Création d'un thème Wordpresse personnalisé<i class="material-icons right">close</i></span>
+							<p>Here is some more information about this product that is only revealed once clicked on.</p>
+						</div>
+						</div>
+					</div>
+				</div>
 			</div>	<!-- fin container -->
+
+			<div class="parallax-container">
+					<div class="parallax"><img src="public/images/01.jpg"></div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<!-- troisime projet -->
+					<div class="col xl7">
+						<div class="card">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="public/images/projets/projet3/01.png">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4">Réalisation d'une application de réservation en Javascript<i class="material-icons right">more_vert</i></span>
+								<p><a href="http://projet3.gostiaux.net">Visiter ce site</a></p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4">Création d'un thème Wordpresse personnalisé<i class="material-icons right">close</i></span>
+								<p>Here is some more information about this product that is only revealed once clicked on.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- quatrieme projet -->
+					<div class="col xl7 offset-xl5">
+							<div class="card">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="public/images/projets/projet3/01.png">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator grey-text text-darken-4">Réalisation d'un blog pour écrivain<i class="material-icons right">more_vert</i></span>
+									<p><a href="http://projet4.gostiaux.net">Visiter ce site</a></p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">Création d'un thème Wordpresse personnalisé<i class="material-icons right">close</i></span>
+									<p>Here is some more information about this product that is only revealed once clicked on.</p>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+
+			<div class="parallax-container">
+					<div class="parallax"><img src="public/images/03.jpeg"></div>
+			</div>
+				
+			<div class="container">
+				<div class="row">
+					<!-- cinquieme projet -->
+					<div class="col xl7">
+							<div class="card">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="public/images/projets/projet3/01.png">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator grey-text text-darken-4">Réalisation d'une application de réservation en Javascript<i class="material-icons right">more_vert</i></span>
+									<p><a href="http://projet5.gostiaux.net">Visiter ce site</a></p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">Création d'un thème Wordpresse personnalisé<i class="material-icons right">close</i></span>
+									<p>Here is some more information about this product that is only revealed once clicked on.</p>
+								</div>
+							</div>
+						</div>
+				</div>
+
+			</div>
 
 
 		<!-- FOOTER -->
-			<footer class="page-footer">
-				<div class="center">
-					<p> 2018, Matthieu GOSTIAUX </p>
-					<div class="divider"></div>
+			<footer class="page-footer" id="contact">
+				<div class="container">
+					<div class="row">
+						<div class="col s12 m6 xl6">
+							<div class="card blue-grey darken-1">
+								<div class="card-content white-text">
+									<span class="card-title">Me contacter</span>
+										<p>Vous pouvez me contacter par téléphone : 06 09 36 50 66</p>
+								</div>
+								<div class="card-action">
+									<p>Ou par e-mail</p>
+									<a href="mailto:votrenom@bidule.com">Envoyez-moi un e-mail</a>
+								</div>
+							</div>
+						</div>
+						<div class="col s12 m6 xl4 offset-xl1">
+							<blockquote>
+								<p class="center-align">Titulaire d'un Master 2 de recherche en Droit Privé et Sciences Criminelles, j'ai choisi de me reconvertir dans un domaine qui me passionne.
+									C'est pourquoi j'ai décidé d'obtenir le diplome de 
+									Développeur Web Junior dispensé par OpenClassRooms en partenariat avec la 3W Academy.
+								</p>
+							</blockquote>
+						</div>
+					</div>
 				</div>
+					<div class="footer-copyright">
+						<div class="container">
+							<p class="center-align">©  2018, Matthieu GOSTIAUX </p>
+						</div>
+					</div>
 			</footer>
 
 

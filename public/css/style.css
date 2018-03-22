@@ -95,3 +95,9 @@ nav {
 /* MEDIA MATERIALIZE 
 600px, 992px, 1200px 
 */
+
+
+.parallax-container {
+    height: 350px;
+  }
+     
