@@ -10,3 +10,9 @@ $(".dropdown-trigger").dropdown();
 $(document).ready(function(){
   $('.sidenav').sidenav();
 });
+
+
+// INITIALISATION MODAL CV
+$(document).ready(function(){
+  $('.modal').modal();
+});
