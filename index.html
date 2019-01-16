@@ -78,18 +78,27 @@
 
 
 		<!-- CONTENU CENTRAL DU SITE -->
-				
+			<!--
 			<div class="parallax-container">
       			<div class="parallax"><img src="public/images/05.jpeg"></div>
-    		</div>
+			</div>
+			-->
+			<div id="loader">
+
+			</div>
+
+			
+			<div id="particles-js"></div> 
 
 			<div class="section white" id="desc">
 				<div class="row container">
-					<h2 class="center-align">Développeur Web Junior</h2>
+					<h2 class="center-align animDev">Développeur Web Junior</h2>
+
 					  
+
 					  <!-- Modal Trigger -->
 					  <div class="center-align">
-							<a class="waves-effect waves-light btn" href="public/MatthieuGostiauxDevWeb.pdf" target="_blank"><i class="material-icons right">cloud</i>Telecharger mon CV</a>
+							<a class="waves-effect waves-light btn CVDL" href="public/MatthieuGostiauxDevWeb.pdf" target="_blank"><i class="material-icons right">cloud</i>Telecharger mon CV</a>
 							<!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Voir mon CV</a> -->
 					  </div>
 
@@ -117,14 +126,15 @@
 
 					  <h5 class="center-align" class="grey-text text-darken-3 lighten-3">Développeur Web : <strong>HTML5, CSS, Javascript, PHP et Mysql. </strong>
 						</br>Vous trouverez ci-dessous un descriptif de mes projets réalisés et les liens permettant de les visiter</h5>
-					<p class="center-align" class="grey-text text-darken-3 lighten-3">Utilisation de CMS <strong>Wordpress</strong> et de Framework <strong>Symfony</strong> Mais encore <strong>Bootstrap ou Materialize</strong></p>
+					<p class="center-align" class="grey-text text-darken-3 lighten-3" id="TYPED">Utilisation de CMS <strong>Wordpress</strong> et de Framework <strong>Symfony</strong> Mais encore <strong>Bootstrap ou Materialize</strong></p>
+
 				</div>
 			</div>
 
-			<div class="container" id="projets">
+			<div class="container">
 				<div class="row">
 					<!-- premier projet -->
-					<div class="col xl7">
+					<div class="col xl7 hvr-grow">
 						<div class="card">
 						<div class="card-image waves-effect waves-block waves-light">
 							<img class="activator" src="public/images/projets/projet1/01.png">
@@ -148,39 +158,62 @@
 						</div>
 						</div>
 					</div>
+
+					<div class="col xl4 offset-xl1" id="icones-projet1">
+						<div class="row">
+							<img class="responsive-img col s6 offset-s3 hvr-grow" title="Responsive Design" src="public/images/logo/responsive.png">
+						</div>
+						<div class="row"> 
+							<img class="responsive-img col s4 hvr-grow" src="public/images/logo/html5.png" title="HTML-5" alt="Logo HTML 5">
+							<img class="responsive-img col s4 hvr-grow" src="public/images/logo/css3.png" title="CSS-3" alt="Logo CSS 3">
+							<img class="responsive-img col s4 hvr-grow" src="public/images/logo/javascript.png" title="Javascript" alt="Logo Javascript">
+						</div>
+					</div>
+					
 				</div>
 
 
 				  
 				<!-- deuxieme projet -->
 				<div class="row" id="second">
-					<div class="col xl7 offset-xl5">
+					<div class="col xl7 hvr-grow" id="projet2">
 						<div class="card">
-						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="public/images/projets/projet2/01.png">
-						</div>
-						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">Création d'un thème Wordpress<i class="material-icons right">more_vert</i></span>
-							<p><a href="http://projet2.gostiaux.net" target="_blank">Visiter ce site</a></p>
-						</div>
-						<div class="card-reveal">
-							<span class="card-title grey-text text-darken-4">Création d'un thème Wordpress personnalisé<i class="material-icons right">close</i></span>
-							<p>Personnalisation d'un thème Wordpress présentant la ville de Strasbourg.
-								</br>
-							Il est également possible de réaliser une réservation dans l'une des différentes activités listées.
-								</br>
-							L'interface d'administration de Wordpress a également était personnalisée pour afficher ou masquer certaines informations et fichiers de configuration
-							suivant le niveau d'autorisation des utilisateurs.
-								</br>
-							Et cela dans le but d'éviter des manipulations néfastes et involontaires.
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="public/images/projets/projet2/01.png">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4">Création d'un thème Wordpress<i class="material-icons right">more_vert</i></span>
+								<p><a href="http://projet2.gostiaux.net" target="_blank">Visiter ce site</a></p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4">Création d'un thème Wordpress personnalisé<i class="material-icons right">close</i></span>
+								<p>Personnalisation d'un thème Wordpress présentant la ville de Strasbourg.
+									</br>
+								Il est également possible de réaliser une réservation dans l'une des différentes activités listées.
+									</br>
+								L'interface d'administration de Wordpress a également était personnalisée pour afficher ou masquer certaines informations et fichiers de configuration
+								suivant le niveau d'autorisation des utilisateurs.
+									</br>
+								Et cela dans le but d'éviter des manipulations néfastes et involontaires.
 
-							</p>
+								</p>
 
-							<p><a href="http://projet2.gostiaux.net" target="_blank">Visiter ce site</a></p>
+								<p><a href="http://projet2.gostiaux.net" target="_blank">Visiter ce site</a></p>
 
-						</div>
+							</div>
 						</div>
 					</div>
+
+					<div class="col xl4" id="icones-projet1">
+						<div class="row">
+							<img class="responsive-img col s6 offset-s3 hvr-grow" title="Responsive Design" src="public/images/logo/responsive.png">
+						</div>
+						<div class="row"> 
+							<img class="responsive-img col s4 offset-s2 hvr-grow" src="public/images/logo/wordpress.png" title="Wordpress" alt="Logo Wordpress">
+							<img class="responsive-img col s4 hvr-grow" src="public/images/logo/php.png" title="PHP" alt="Logo PHP">
+						</div>
+					</div>
+
 				</div>
 			</div>	<!-- fin container -->
 
@@ -191,7 +224,7 @@
 			<div class="container">
 				<div class="row">
 					<!-- troisime projet -->
-					<div class="col xl7">
+					<div class="col xl7 hvr-grow">
 						<div class="card">
 							<div class="card-image waves-effect waves-block waves-light">
 								<img class="activator" src="public/images/projets/projet3/01.png">
@@ -220,41 +253,73 @@
 						</div>
 					</div>
 
+					<div class="col xl4 offset-xl1" id="icones-projet1">
+						<div class="row">
+							<img class="responsive-img col s6 offset-s3 hvr-grow" title="Responsive Design" src="public/images/logo/responsive.png">
+						</div>
+						<div class="row"> 
+							<img class="responsive-img col s3 hvr-grow" src="public/images/logo/html5.png" title="HTML-5" alt="Logo HTML 5">
+							<img class="responsive-img col s3 hvr-grow" src="public/images/logo/css3.png" title="CSS-3" alt="Logo CSS 3">
+							<img class="responsive-img col s3 hvr-grow" src="public/images/logo/javascript.png" title="Javascript" alt="Logo Javascript">
+							<img class="responsive-img col s3 hvr-grow" src="public/images/logo/api.png" title="API" alt="Logo API">
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
 					<!-- quatrieme projet -->
-					<div class="col xl7 offset-xl5">
-							<div class="card">
-								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="public/images/projets/projet4/01.png">
-								</div>
-								<div class="card-content">
-									<span class="card-title activator grey-text text-darken-4">Réalisation d'un blog pour écrivain<i class="material-icons right">more_vert</i></span>
-									<p><a href="http://projet4.gostiaux.net" target="_blank">Visiter ce site</a></p>
-								</div>
-								<div class="card-reveal">
-									<span class="card-title grey-text text-darken-4">Création d'un blog pour écrivain<i class="material-icons right">close</i></span>
-									<p>Ce site permet de publier facilement et de manière totalement intuitive pour quelqu'un de non initié au HTML cela grâce à une interface WYSIWYG.
-										</br>
-									Il est possible de s'enregistrer dans un espace membre et
-									il est également possible pour les membres de poster des commentaires sur les articles publiés, de les signaler afin qu'ils puissent être modérés dans l'interface
-									d'administration disponible pour les administrateurs du site.
-										</br>
-									De même, la modification ou la suppression d'un épisode se réalise trés simplement.
-									</p>
-										<div class="divider"></div>
-									<p>Pour tester les fonctionnalités de ce site pleinement, Vous pouvez me demander l'accès à un compte administrateur vous donnant accès à toutes les fonctionnalités de l'espace membre.
-										Afin de créer, modifier, supprimer des épisodes, ou de poster, signaler les commentaires et de les modérer.
-										</br>
-										<!-- 
-									<strong>Identifiant : </strong>administrateur </br>
-									<strong>Mot de passe : </strong>test
-										-->
-									</p>
+					<div class="col xl7 hvr-grow" id="projet4">
+						<div class="card">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="public/images/projets/projet4/01.png">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4">Réalisation d'un blog pour écrivain<i class="material-icons right">more_vert</i></span>
+								<p><a href="http://projet4.gostiaux.net" target="_blank">Visiter ce site</a></p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4">Création d'un blog pour écrivain<i class="material-icons right">close</i></span>
+								<p>Ce site permet de publier facilement et de manière totalement intuitive pour quelqu'un de non initié au HTML cela grâce à une interface WYSIWYG.
+									</br>
+								Il est possible de s'enregistrer dans un espace membre et
+								il est également possible pour les membres de poster des commentaires sur les articles publiés, de les signaler afin qu'ils puissent être modérés dans l'interface
+								d'administration disponible pour les administrateurs du site.
+									</br>
+								De même, la modification ou la suppression d'un épisode se réalise trés simplement.
+								</p>
+									<div class="divider"></div>
+								<p>Pour tester les fonctionnalités de ce site pleinement, Vous pouvez me demander l'accès à un compte administrateur vous donnant accès à toutes les fonctionnalités de l'espace membre.
+									Afin de créer, modifier, supprimer des épisodes, ou de poster, signaler les commentaires et de les modérer.
+									</br>
+									<!-- 
+								<strong>Identifiant : </strong>administrateur </br>
+								<strong>Mot de passe : </strong>test
+									-->
+								</p>
 
-									<p><a href="http://projet4.gostiaux.net" target="_blank">Visiter ce site</a></p>
+								<p><a href="http://projet4.gostiaux.net" target="_blank">Visiter ce site</a></p>
 
-								</div>
 							</div>
 						</div>
+					</div>
+
+					<div class="col xl4" id="icones-projet1">
+							<div class="row">
+								<img class="responsive-img col s6 offset-s3 hvr-grow" title="Responsive Design" src="public/images/logo/responsive.png">
+							</div>
+							<div class="row"> 
+								<img class="responsive-img col s4 hvr-grow" src="public/images/logo/html5.png" title="HTML-5" alt="Logo HTML 5">
+								<img class="responsive-img col s4 hvr-grow" src="public/images/logo/css3.png" title="CSS-3" alt="Logo CSS 3">
+								<img class="responsive-img col s4 hvr-grow" src="public/images/logo/javascript.png" title="Javascript" alt="Logo Javascript">
+
+							</div>
+							<div class="row">
+								<img class="responsive-img col s4 offset-s2 hvr-grow" src="public/images/logo/mysql.png" title="MySQL" alt="Logo MySQL">
+								<img class="responsive-img col s4 hvr-grow" src="public/images/logo/php.png" title="PHP" alt="Logo PHP">
+							</div>
+						</div>
+
+
 				</div>
 			</div>
 
@@ -265,46 +330,64 @@
 			<div class="container">
 				<div class="row">
 					<!-- cinquieme projet -->
-					<div class="col xl7">
-							<div class="card">
-								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="public/images/projets/projet5/01.png">
-								</div>
-								<div class="card-content">
-									<span class="card-title activator grey-text text-darken-4">Réalisation d'un site de gestion de collections sous Symfony 4<i class="material-icons right">more_vert</i></span>
-									<p><a href="http://projet5.gostiaux.net">Visiter ce site</a></p>
-								</div>
-								<div class="card-reveal">
-									<span class="card-title grey-text text-darken-4">Création d'un site de gestion de collections<i class="material-icons right">close</i></span>
-									<p>Site permettant de gérer des collections diverses à l'aide d'une interface agréable et intuitive.
+					<div class="col xl7 hvr-grow">
+						<div class="card">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="public/images/projets/projet5/01.png">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4">Réalisation d'un site de gestion de collections sous Symfony 4<i class="material-icons right">more_vert</i></span>
+								<p><a href="http://projet5.gostiaux.net" target="_blank">Visiter ce site</a></p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4">Création d'un site de gestion de collections<i class="material-icons right">close</i></span>
+								<p>Site permettant de gérer des collections diverses à l'aide d'une interface agréable et intuitive.
+								</br>
+									Ce site utilise diverses technologies comme : HTML5, CSS, Javascript, Symfony 4 et Bootstrap.
+									Les collections sont stockées dans une Base de données MySql.
+								</br>
+									Les bonnes pratiques de Symfony ont été respectées.
+								</p>										
+									<div class="divider"></div>
+								<p>
+									L'utilisateur de cette application Symfony a la possibilité de créer un compte afin de gérer ses Collections et de les classer en différentes Catégories.
 									</br>
-										Ce site utilise diverses technologies comme : HTML5, CSS, Javascript, Symfony 4 et Bootstrap.
-										Les collections sont stockées dans une Base de données MySql.
-									</br>
-										Les bonnes pratiques de Symfony ont été respectées.
-									</p>										
-										<div class="divider"></div>
-									<p>
-										L'utilisateur de cette application Symfony a la possibilité de créer un compte afin de gérer ses Collections et de les classer en différentes Catégories.
-										</br>
-										Il peut ensuite ajouter des images d'illustration facilement à chacun de ces éléments.
+									Il peut ensuite ajouter des images d'illustration facilement à chacun de ces éléments.
 
 
-									</p>
+								</p>
 
 
-									<p><a href="http://projet5.gostiaux.net">Visiter ce site</a></p>
+								<p><a href="http://projet5.gostiaux.net" target="_blank">Visiter ce site</a></p>
 
-								</div>
 							</div>
 						</div>
+					</div>
+
+					<div class="col xl4 offset-xl1">
+						<div class="row">
+							<img class="responsive-img col s6 offset-s3 hvr-grow" title="Responsive Design" src="public/images/logo/responsive.png">
+						</div>
+						<div class="row"> 
+							<img class="responsive-img col s3 hvr-grow" src="public/images/logo/symfony.png" title="Symfony" alt="Logo Symfony">
+							<img class="responsive-img col s3 hvr-grow" src="public/images/logo/php.png" title="PHP" alt="Logo PHP">
+							<img class="responsive-img col s3 hvr-grow" src="public/images/logo/bootstrap.png" title="Bootstrap" alt="Logo Bootstrap">
+							<img class="responsive-img col s3 hvr-grow" src="public/images/logo/javascript.png" title="Javascript" alt="Logo Javascript">
+						</div>
+						<div class="row"  id="icones-projet5-row2">
+								<img class="responsive-img col s3 offset-s2 hvr-grow" src="public/images/logo/twig.png" title="Twig Templates" alt="Logo Twig">
+								<img class="responsive-img col s3 hvr-grow" src="public/images/logo/mysql.png" title="MySQL" alt="Logo MySql">
+								<img class="responsive-img col s3 hvr-grow" src="public/images/logo/doctrine.png" title="MySQL" alt="Logo MySql">
+						</div>
+					</div>
+
 				</div>
 
 			</div>
 
 
 		<!-- FOOTER -->
-			<footer class="page-footer" id="contact">
+			<footer class="page-footer reveal" id="contact">
 				<div class="container">
 					<div class="row">
 						<div class="col s12 m6 xl6">
@@ -314,8 +397,8 @@
 										<p>Vous pouvez me contacter par téléphone : 06 09 36 50 66</p>
 								</div>
 								<div class="card-action">
-									<p>Ou par e-mail : matthieu.gostiaux@free.fr</p>
-									<a href="mailto:matthieu.gostiaux@free.fr">Envoyez-moi un e-mail</a>
+									<p>Ou par e-mail : matthieu@gostiaux.net</p>
+									<a href="mailto:matthieu@gostiaux.net">Envoyez-moi un e-mail</a>
 								</div>
 							</div>
 						</div>
@@ -331,7 +414,7 @@
 				</div>
 					<div class="footer-copyright">
 						<div class="container">
-							<p class="center-align">©  2018, Matthieu GOSTIAUX </p>
+							<p class="center-align">©  2019, Matthieu GOSTIAUX </p>
 						</div>
 					</div>
 			</footer>
@@ -342,6 +425,10 @@
 		<!-- SCRIPTS -->
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	<!-- JQuery -->
 			<script type="text/javascript" src="public/js/materialize.min.js"></script>					<!-- Materialize -->
+			<script type="text/javascript" src="public/js/particles.min.js"></script>					<!-- particules -->
+			<script src="https://unpkg.com/scrollreveal"></script>										<!-- scroll revealing -->
+			<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>							<!-- typed script-->
 			<script src="public/js/main.js"></script> 													<!-- JS d'initialisation -->
+
     </body>
 </html>
