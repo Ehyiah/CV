@@ -37,7 +37,7 @@ nav {
 
 
 
-/* DERNIERS BILLETS ET COMMENTAIRES */
+
 
     /* DERNIERS BILLETS */
         #billetdroit {
@@ -107,7 +107,7 @@ nav {
 
 body {
 /*    background: url("../images/wallpaper.jpg"); */
-    background-color: rgba(51,51,51,0.12)
+    background-color: rgba(51,51,51,0.12);
 }
 
 #desc {
@@ -210,3 +210,26 @@ body {
 #icones-projet5-row2{
     padding-right: 30px;
 }
+
+
+/* Contact */
+#contact-card{
+    margin-top: 10px;
+}
+
+#contact-form{
+    /*background-color: rgba(51,51,51,0.12);*/
+    background-color:#546e7a !important;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+#contact-text{
+    color: white;
+}
+.input-field>label{
+    color: white;
+}
+#contact-button{
+    text-align: center;
+}
+

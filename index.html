@@ -34,7 +34,7 @@
 				<!-- menu classique desktop -->
 					<div class="navbar-fixed" id="menuDesktop">
 						<nav>
-							<a href="http://cv.gostiaux.net" id="logo">
+							<a href="http://gostiaux.net" id="logo">
 								<img src="public/images/logo.png" alt="Logo du site">
 							</a>
 
@@ -45,7 +45,7 @@
 								</ul>
 								
 							<ul class="right hide-on-med-and-down" id="menuDroit">
-								<li><a href="http://cv.gostiaux.net"><i class="material-icons left">home</i>Accueil</a></li>
+								<li><a href="http://gostiaux.net"><i class="material-icons left">home</i>Accueil</a></li>
 								<li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons left">local_library</i>Menu<i class="material-icons right">arrow_drop_down</i></a></li>
 
 							</ul>
@@ -131,7 +131,7 @@
 				</div>
 			</div>
 
-			<div class="container">
+			<div class="container" id="projets">
 				<div class="row">
 					<!-- premier projet -->
 					<div class="col xl7 hvr-grow">
@@ -159,7 +159,7 @@
 						</div>
 					</div>
 
-					<div class="col xl4 offset-xl1" id="icones-projet1">
+					<div class="col xl4 offset-xl1 reveal" id="icones-projet1">
 						<div class="row">
 							<img class="responsive-img col s6 offset-s3 hvr-grow" title="Responsive Design" src="public/images/logo/responsive.png">
 						</div>
@@ -204,7 +204,7 @@
 						</div>
 					</div>
 
-					<div class="col xl4" id="icones-projet1">
+					<div class="col xl4 reveal" id="icones-projet1">
 						<div class="row">
 							<img class="responsive-img col s6 offset-s3 hvr-grow" title="Responsive Design" src="public/images/logo/responsive.png">
 						</div>
@@ -253,7 +253,7 @@
 						</div>
 					</div>
 
-					<div class="col xl4 offset-xl1" id="icones-projet1">
+					<div class="col xl4 offset-xl1 reveal" id="icones-projet1">
 						<div class="row">
 							<img class="responsive-img col s6 offset-s3 hvr-grow" title="Responsive Design" src="public/images/logo/responsive.png">
 						</div>
@@ -303,7 +303,7 @@
 						</div>
 					</div>
 
-					<div class="col xl4" id="icones-projet1">
+					<div class="col xl4 reveal" id="icones-projet1">
 							<div class="row">
 								<img class="responsive-img col s6 offset-s3 hvr-grow" title="Responsive Design" src="public/images/logo/responsive.png">
 							</div>
@@ -311,7 +311,6 @@
 								<img class="responsive-img col s4 hvr-grow" src="public/images/logo/html5.png" title="HTML-5" alt="Logo HTML 5">
 								<img class="responsive-img col s4 hvr-grow" src="public/images/logo/css3.png" title="CSS-3" alt="Logo CSS 3">
 								<img class="responsive-img col s4 hvr-grow" src="public/images/logo/javascript.png" title="Javascript" alt="Logo Javascript">
-
 							</div>
 							<div class="row">
 								<img class="responsive-img col s4 offset-s2 hvr-grow" src="public/images/logo/mysql.png" title="MySQL" alt="Logo MySQL">
@@ -364,7 +363,7 @@
 						</div>
 					</div>
 
-					<div class="col xl4 offset-xl1">
+					<div class="col xl4 offset-xl1 reveal">
 						<div class="row">
 							<img class="responsive-img col s6 offset-s3 hvr-grow" title="Responsive Design" src="public/images/logo/responsive.png">
 						</div>
@@ -375,9 +374,9 @@
 							<img class="responsive-img col s3 hvr-grow" src="public/images/logo/javascript.png" title="Javascript" alt="Logo Javascript">
 						</div>
 						<div class="row"  id="icones-projet5-row2">
-								<img class="responsive-img col s3 offset-s2 hvr-grow" src="public/images/logo/twig.png" title="Twig Templates" alt="Logo Twig">
-								<img class="responsive-img col s3 hvr-grow" src="public/images/logo/mysql.png" title="MySQL" alt="Logo MySql">
-								<img class="responsive-img col s3 hvr-grow" src="public/images/logo/doctrine.png" title="MySQL" alt="Logo MySql">
+							<img class="responsive-img col s3 offset-s2 hvr-grow" src="public/images/logo/twig.png" title="Twig Templates" alt="Logo Twig">
+							<img class="responsive-img col s3 hvr-grow" src="public/images/logo/mysql.png" title="MySQL" alt="Logo MySql">
+							<img class="responsive-img col s3 hvr-grow" src="public/images/logo/doctrine.png" title="MySQL" alt="Logo MySql">
 						</div>
 					</div>
 
@@ -387,14 +386,14 @@
 
 
 		<!-- FOOTER -->
-			<footer class="page-footer reveal" id="contact">
+			<footer class="page-footer" id="contact">
 				<div class="container">
 					<div class="row">
-						<div class="col s12 m6 xl6">
+						<div class="col s12 xl4" id="contact-card">
 							<div class="card blue-grey darken-1">
 								<div class="card-content white-text">
 									<span class="card-title">Me contacter</span>
-										<p>Vous pouvez me contacter par téléphone : 06 09 36 50 66</p>
+										<p>Vous pouvez me contacter par téléphone :</br> 06 09 36 50 66</p>
 								</div>
 								<div class="card-action">
 									<p>Ou par e-mail : matthieu@gostiaux.net</p>
@@ -402,7 +401,39 @@
 								</div>
 							</div>
 						</div>
-						<div class="col s12 m6 xl4 offset-xl1">
+
+						<div class="col s12 xl4">
+							<!-- formulaire de contact -->
+							<div id="contact-form">
+								<form method="POST" action="traitement.php">
+									<h5 class="center-align" id="contact-text">Sinon, vous pouvez me contacter directement</h5>
+									<div class="input-field">
+										<input type="text" name="nom" id="nom" class="validate">
+										<label for="nom">Votre nom :</label>
+									</div>
+									<div class="input-field">
+										<input type="email" name="email" id="email" class="validate">
+										<label for="email">Votre mail :</label>
+									</div>
+									<div class="input-field">
+										<input type="tel" name="tel" id="tel">
+										<label for="tel">Votre numéro :</label>
+									</div>
+									<div class="input-field">
+										<textarea id="text-area" name="text-area" class="materialize-textarea"></textarea>
+										<label for="text-area">Votre message :</label>
+									</div>
+									
+									<div  id="contact-button">
+										<button class="btn waves-effect waves-light" type="submit" name="action">Envoyer
+												<i class="material-icons right">send</i>
+										</button>
+									</div>
+								</form>
+							</div>
+							<!-- fin formulaire contact-->
+						</div>
+						<div class="col s12 xl4">
 							<blockquote>
 								<p class="center-align">Titulaire d'un Master 2 de recherche en Droit Privé et Sciences Criminelles, j'ai choisi de me reconvertir dans un domaine qui me passionne.
 									C'est pourquoi j'ai décidé d'obtenir le diplome de 
