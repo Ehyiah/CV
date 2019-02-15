@@ -1,3 +1,6 @@
+<?php
+require('private.php')
+    ?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -25,7 +28,9 @@
 		<meta name="twitter:title" content="Matthieu GOSTIAUX">
 		<meta name="twitter:description" content="Matthieu GOSTIAUX">
 		<meta name="twitter:image" content="http://cv.gostiaux.net/images/logo.png">
-		
+
+		<!-- google captach -->
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </head>
 
     <body>
@@ -423,6 +428,8 @@
 										<textarea id="text-area" name="text-area" class="materialize-textarea"></textarea>
 										<label for="text-area">Votre message :</label>
 									</div>
+
+									<div class="g-recaptcha" data-sitekey="<?=$privateKey?>"></div>
 									
 									<div  id="contact-button">
 										<button class="btn waves-effect waves-light" type="submit" name="action">Envoyer
