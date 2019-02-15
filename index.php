@@ -29,7 +29,7 @@ require('private.php')
 		<meta name="twitter:description" content="Matthieu GOSTIAUX">
 		<meta name="twitter:image" content="http://cv.gostiaux.net/images/logo.png">
 
-		<!-- google captach -->
+		<!-- google captcha -->
 		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </head>
 

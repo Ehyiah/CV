@@ -61,8 +61,5 @@ require("private.php");
     }
 
 	else {
-	    die;
 		header('Location: index.php#contact-form');
 	}
-
-
